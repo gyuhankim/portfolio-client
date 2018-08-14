@@ -3,10 +3,14 @@ import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 
 import HeaderBar from './header-bar';
-import LandingPage from './landing-page';
-import Dashboard from './dashboard';
-import RegistrationPage from './registration-page';
+import HomePage from './home-page';
+import AboutPage from './about-page';
+import ProjectsPage from './projects-page';
+import BlogPage from './blog-page';
+
 import {refreshAuthToken} from '../actions/auth';
+
+import '../styles/app.css';
 
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
@@ -42,8 +46,10 @@ export class App extends React.Component {
         return (
             <div className="app">
                 <HeaderBar />
-                <Route exact path="/" component={LandingPage} />
-                <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/about" component={AboutPage} />
+                <Route exact path="/projects" component={ProjectsPage} />
+                <Route exact path="/blog" component={BlogPage} />
             </div>
         );
     }
