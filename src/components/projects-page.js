@@ -8,13 +8,6 @@ export class ProjectsPage extends React.Component {
 
     return (
       <div className="projects">
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Blog</Link>
-
-
-
         <p>
           Grid format view of all projects.
           Decide how to approach separating the different project classes.

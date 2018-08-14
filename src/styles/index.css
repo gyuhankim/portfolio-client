@@ -1,26 +1,20 @@
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-}
-
-html {
-  background-color: #A8D0E6;
-  /* background-color: #F8E9A1; */
-  /* background-color: #F76C6C; */
-  /* background-color: #374785; */
-  /* background-color: #24305E; */
+  /* font-family: 'Playfair Display'; */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
+  color: red;
   text-decoration: underline;
 }

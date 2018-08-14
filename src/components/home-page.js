@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 
+import '../styles/home-page.css';
+
 export function HomePage(props) {
   // If we are logged in redirect straight to the user's dashboard
   if (props.loggedIn) {
@@ -10,15 +12,12 @@ export function HomePage(props) {
 
   return (
     <div className="home">
-      <Link to="/">Home</Link>
-      <Link to="/about">About Me</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/blog">Blog</Link>
-
-      <p>
-        Test
-      </p>
-
+      <p>joe.</p>
+      <div>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/blog">Blog</Link>
+      </div>
     </div>
   );
 }

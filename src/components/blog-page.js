@@ -8,12 +8,6 @@ export class BlogPage extends React.Component {
 
     return (
       <div className="blog">
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Blog</Link>
-
-
         <p>
           Grid format blog posts.
           Need to have a CMS here that's only accessible when logged in via button.

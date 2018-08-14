@@ -8,17 +8,10 @@ export class AboutPage extends React.Component {
 
     return (
       <div className="about">
-        <Link to="/">Home</Link>
-        <Link to="/about">About Me</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Blog</Link>
-
-
         <p> 
           Need a head shot.
           Short Summary and 3 column layout for skills.
         </p>
-
       </div>
     );
   }

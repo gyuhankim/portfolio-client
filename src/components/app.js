@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Route, withRouter} from 'react-router-dom';
+import {Link, Route, withRouter} from 'react-router-dom';
 
 import HeaderBar from './header-bar';
 import HomePage from './home-page';
@@ -45,7 +45,6 @@ export class App extends React.Component {
     render() {
         return (
             <div className="app">
-                <HeaderBar />
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/about" component={AboutPage} />
                 <Route exact path="/projects" component={ProjectsPage} />
