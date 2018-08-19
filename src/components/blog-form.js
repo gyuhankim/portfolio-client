@@ -27,10 +27,10 @@ export class BlogForm extends React.Component {
 
                 <label htmlFor="tags">Tags</label>
                 <Field component="select" type="select" name="tags">
-                    <option value="1">test1</option>
-                    <option value="2">test2</option>
-                    <option value="3">test3</option>
-                    <option value="4">test4</option>
+                    <option value="webdev">webdev</option>
+                    <option value="gamedev">gamedev</option>
+                    <option value="justforfun">justforfun</option>
+                    <option value="life">life</option>
                 </Field>
                
                 <button

@@ -1,0 +1,27 @@
+.header-bar {
+  width: 50%;
+}
+
+.header-bar-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-bar {
+  margin: 20px 0;
+}
+
+.nav-link {
+  font-size: 18px;
+  margin: 0 14px;
+}
+
+.logout-button {
+  margin: 10px 0;
+}
+
+@media (max-width: 500px) {
+  .header-bar {
+    width: 90%;
+  }
+}

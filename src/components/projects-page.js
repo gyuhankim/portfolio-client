@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+
+import thumbnail from '../images/launchpad.png'
+
+import '../styles/projects-page.css';
 
 export class ProjectsPage extends React.Component {
 
@@ -8,10 +11,42 @@ export class ProjectsPage extends React.Component {
 
     return (
       <div className="projects">
-        <p>
-          Grid format view of all projects.
-          Decide how to approach separating the different project classes.
-        </p>
+
+        <div className="project">
+          <a href="#" className="project-link" target="_blank">
+            <img src={thumbnail} className="project-thumbnail" />
+            Cubes
+          </a>
+        </div>
+
+        <div className="project">
+          <a href="https://intense-thicket-25944.herokuapp.com/" className="project-link" target="_blank">
+            <img src={thumbnail} className="project-thumbnail" />
+            s4
+          </a>
+        </div>
+
+        <div className="project">
+          <a href="#" className="project-link" target="_blank">
+            <img src={thumbnail} className="project-thumbnail" />
+            Testing
+          </a>
+        </div>
+
+        <div className="project">
+          <a href="https://mysterious-sands-19667.herokuapp.com/" className="project-link" target="_blank">
+            <img src={thumbnail} className="project-thumbnail" />
+            LaunchPad.gg
+          </a>
+        </div>
+
+        <div className="project">
+          <a href="https://mighty-anchorage-60704.herokuapp.com/" className="project-link" target="_blank">
+            <img src={thumbnail} className="project-thumbnail" />
+            KNOW(tation)
+          </a>
+        </div>
+
       </div>
     );
   }

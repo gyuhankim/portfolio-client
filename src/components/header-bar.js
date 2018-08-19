@@ -24,8 +24,19 @@ export class HeaderBar extends React.Component {
       <div className="header-bar">
         <Link to="/" className="header-bar-title">joe.</Link>
 
+        <div className="logout-button">
+          {logOutButton}
+        </div>
 
-        {logOutButton}
+        <div className="nav-bar">
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/projects" className="nav-link">Projects</Link>
+          <Link to="/blog" className="nav-link">Blog</Link>
+        </div>
+
+        <div className="spacer">
+        </div>
+
       </div>
     );
   }

@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Playfair Display'; */
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Playfair Display';
 }
 
 body {
@@ -15,6 +15,27 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: rgb(255, 102, 102);
   text-decoration: underline;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid rgb(255, 102, 102);
+  border-radius: 2px;
+  font-size: 14px;
+  color: rgb(255, 102, 102);
+}
+
+.spacer {
+  width: 100%;
+  margin: 20px 0 20px 0;
+  border: 0.5px solid black;
 }

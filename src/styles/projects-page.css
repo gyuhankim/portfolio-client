@@ -1,0 +1,43 @@
+.projects {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 20px;
+}
+
+.project {
+  flex: 1 1 25%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  margin: 20px;
+  padding: 10px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.6);
+}
+
+.project-thumbnail {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .projects {
+    justify-content: center;
+  }
+
+  .project {
+    flex: 1 1 33%;
+  }
+}
+
+@media (max-width: 850px) {
+  .projects {
+    width: 90%;
+  }
+
+  .project {
+    flex: 0 1 100%;
+  }
+}

@@ -4,15 +4,11 @@ import { Link, Redirect } from 'react-router-dom';
 
 import '../styles/home-page.css';
 
-export function HomePage(props) {
+export function HomePage() {
 
   return (
     <div className="home">
-      <div>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Blog</Link>
-      </div>
+      
     </div>
   );
 }

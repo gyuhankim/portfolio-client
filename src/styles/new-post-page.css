@@ -1,0 +1,13 @@
+.create-new-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 600px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
