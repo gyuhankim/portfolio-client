@@ -5,14 +5,9 @@ import { Link, Redirect } from 'react-router-dom';
 import '../styles/home-page.css';
 
 export function HomePage(props) {
-  // If we are logged in redirect straight to the user's dashboard
-  if (props.loggedIn) {
-    return <Redirect to="/dashboard" />;
-  }
 
   return (
     <div className="home">
-      <p>joe.</p>
       <div>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>

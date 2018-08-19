@@ -7,6 +7,8 @@ import HomePage from './home-page';
 import AboutPage from './about-page';
 import ProjectsPage from './projects-page';
 import BlogPage from './blog-page';
+import NewPost from './create-post-page';
+import LoginPage from './login-page';
 
 import {refreshAuthToken} from '../actions/auth';
 
@@ -45,10 +47,13 @@ export class App extends React.Component {
     render() {
         return (
             <div className="app">
+                <HeaderBar />
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/about" component={AboutPage} />
                 <Route exact path="/projects" component={ProjectsPage} />
                 <Route exact path="/blog" component={BlogPage} />
+                <Route exact path="/blog/new-post" component={NewPost} />
+                <Route exact path="/login" component={LoginPage} />
             </div>
         );
     }
