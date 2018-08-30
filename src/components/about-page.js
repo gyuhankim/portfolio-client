@@ -20,7 +20,7 @@ export class AboutPage extends React.Component {
     return (
       <div className="about">
         <p> 
-          Under construction, please check back later!
+          Under construction, please check back later!!
         </p>
         <img src={this.randomizeBG(bgs)} alt="pixel art gif" />
       </div>
