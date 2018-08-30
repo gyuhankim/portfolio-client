@@ -67,6 +67,11 @@ export const getOnePost = id => dispatch => {
   .catch(err => dispatch(getOnePostError(err)))
 }
 
+export const SUBMIT_BLOG_POST_REQUEST = 'SUBMIT_BLOG_POST_REQUEST';
+export const submitBlogPostRequest = () => ({
+  type: SUBMIT_BLOG_POST_REQUEST
+})
+
 export const SUBMIT_BLOG_POST_SUCCESS = 'SUBMIT_BLOG_POST_SUCCESS';
 export const submitBlogPostSuccess = () => ({
   type: SUBMIT_BLOG_POST_SUCCESS
@@ -79,26 +84,68 @@ export const submitBlogPostError = err => ({
 })
 
 export const submitBlogPost = post => dispatch => {
+  dispatch(submitBlogPostRequest());
 
-    return fetch(`${API_BASE_URL}/blog`, {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(post)
-    })
-        .then(res => normalizeResponseErrors(res))
-        .then(res => res.json())
-        .then(() => dispatch(getBlog()))
-        .catch(err => {
-            const {reason, message, location} = err;
-            if (reason === 'ValidationError') {
-                // Convert ValidationErrors into SubmissionErrors for Redux Form
-                return Promise.reject(
-                    new SubmissionError({
-                        [location]: message
-                    })
-                );
-            }
-        });
+  return fetch(`${API_BASE_URL}/blog`, {
+      method: 'POST',
+      headers: {
+          'content-type': 'application/json'
+      },
+      body: JSON.stringify(post)
+  })
+      .then(res => normalizeResponseErrors(res))
+      .then(res => res.json())
+      .catch(err => {
+          const {reason, message, location} = err;
+          if (reason === 'ValidationError') {
+              // Convert ValidationErrors into SubmissionErrors for Redux Form
+              return Promise.reject(
+                  new SubmissionError({
+                      [location]: message
+                  })
+              );
+          }
+      });
 };
+
+export const DELETE_BLOG_POST_REQUEST = 'DELETE_BLOG_POST_REQUEST';
+export const deleteBlogPostRequest = () => ({
+  type: DELETE_BLOG_POST_REQUEST
+})
+
+
+export const DELETE_BLOG_POST_SUCCESS = 'DELETE_BLOG_POST_SUCCESS';
+export const deleteBlogPostSuccess = () => ({
+  type: DELETE_BLOG_POST_SUCCESS
+})
+
+export const DELETE_BLOG_POST_ERROR = 'DELETE_BLOG_POST_ERROR';
+export const deleteBlogPostError = err => ({
+  type: DELETE_BLOG_POST_ERROR,
+  err
+})
+
+export const deleteBlogPost = postId => dispatch => {
+  dispatch(deleteBlogPostRequest());
+
+  return fetch(`${API_BASE_URL}/blog/${postId}`, {
+    method: 'DELETE',
+    headers: {
+      'content-type': 'application/json'
+    }
+  })
+  .then(res => normalizeResponseErrors(res))
+  .then(res => res.json())
+  .catch(err => {
+      const {reason, message, location} = err;
+      if (reason === 'ValidationError') {
+          // Convert ValidationErrors into SubmissionErrors for Redux Form
+          return Promise.reject(
+              new SubmissionError({
+                  [location]: message
+              })
+          );
+      }
+  });
+
+}

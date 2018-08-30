@@ -5,8 +5,12 @@ import {
   GET_ONE_POST_REQUEST,
   GET_ONE_POST_SUCCESS,
   GET_ONE_POST_ERROR,
+  SUBMIT_BLOG_POST_REQUEST,
   SUBMIT_BLOG_POST_SUCCESS,
-  SUBMIT_BLOG_POST_ERROR
+  SUBMIT_BLOG_POST_ERROR,
+  DELETE_BLOG_POST_REQUEST,
+  DELETE_BLOG_POST_SUCCESS,
+  DELETE_BLOG_POST_ERROR
 } from '../actions/blog';
 
 const initialState = {
@@ -61,6 +65,12 @@ export default function blogReducer(state = initialState, action) {
       error: action.err
     }
 
+    case SUBMIT_BLOG_POST_REQUEST:
+    return {
+      ...state,
+      loading: true
+    }
+
     case SUBMIT_BLOG_POST_SUCCESS:
     return {
       ...state,
@@ -69,6 +79,26 @@ export default function blogReducer(state = initialState, action) {
     }
 
     case SUBMIT_BLOG_POST_ERROR:
+    return {
+      ...state,
+      loading: false,
+      error: action.err
+    }
+
+    case DELETE_BLOG_POST_REQUEST:
+    return {
+      ...state,
+      loading: true
+    }
+
+    case DELETE_BLOG_POST_SUCCESS:
+    return {
+      ...state,
+      loading: false,
+      error: null
+    }
+
+    case DELETE_BLOG_POST_ERROR:
     return {
       ...state,
       loading: false,

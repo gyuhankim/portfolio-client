@@ -1,17 +1,32 @@
 import React from 'react';
 import {Field, reduxForm, focus} from 'redux-form';
 import {submitBlogPost} from '../actions/blog';
-import Input from './input';
 import {required, nonEmpty} from '../validators';
+import { Redirect } from 'react-router-dom';
 
 export class BlogForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            submitted: false
+        }
+    }
+
     onSubmit(values) {
-        const {title, content, tags} = values;
-        const post = {title, content, tags};
+        const {title, content} = values;
+        const post = {title, content};
+        this.setState({
+            submitted: true
+        })
         return this.props.dispatch(submitBlogPost(post))   
     }
 
     render() {
+
+        if (this.state.submitted) {
+            return <Redirect to="/blog" />
+        }
+
         return (
             <form
                 className="blog-form"
@@ -25,14 +40,6 @@ export class BlogForm extends React.Component {
                 <label htmlFor="content">Content</label>
                 <Field component="textarea" type="textarea" name="content" validate={[required, nonEmpty]} />
 
-                <label htmlFor="tags">Tags</label>
-                <Field component="select" type="select" name="tags">
-                    <option value="webdev">webdev</option>
-                    <option value="gamedev">gamedev</option>
-                    <option value="justforfun">justforfun</option>
-                    <option value="life">life</option>
-                </Field>
-               
                 <button
                     type="submit"
                     disabled={this.props.pristine || this.props.submitting}>

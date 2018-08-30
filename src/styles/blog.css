@@ -1,0 +1,13 @@
+.blog {
+  width: 50%;
+}
+
+.blog-post {
+  border: 1px solid black;
+}
+
+@media (max-width: 500px) {
+  .blog {
+    width: 90%;
+  }
+}
