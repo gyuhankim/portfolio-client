@@ -18,7 +18,7 @@ export class NewPost extends React.Component {
   
         <div className="blog-form=container">
           <p>
-            Create New Post
+            New Post
           </p>
           <BlogForm />
         </div>

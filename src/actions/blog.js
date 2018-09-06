@@ -95,6 +95,8 @@ export const submitBlogPost = post => dispatch => {
   })
       .then(res => normalizeResponseErrors(res))
       .then(res => res.json())
+      .then(() => dispatch(submitBlogPostSuccess()))
+      .then(() => dispatch(getBlog()))
       .catch(err => {
           const {reason, message, location} = err;
           if (reason === 'ValidationError') {
@@ -136,6 +138,8 @@ export const deleteBlogPost = postId => dispatch => {
   })
   .then(res => normalizeResponseErrors(res))
   .then(res => res.json())
+  .then(() => dispatch(deleteBlogPostSuccess()))
+  .then(() => dispatch(getBlog()))
   .catch(err => {
       const {reason, message, location} = err;
       if (reason === 'ValidationError') {

@@ -45,7 +45,7 @@ export class BlogForm extends React.Component {
                     disabled={this.props.pristine || this.props.submitting}>
                     Submit
                 </button>
-            
+                
             </form>
         );
     }

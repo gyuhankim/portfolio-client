@@ -2,12 +2,53 @@
   width: 50%;
 }
 
+.posts-container {
+  width: 70%;
+  margin: 20px auto;
+}
+
 .blog-post {
-  border: 1px solid black;
+  padding: 10px;
+}
+
+.post-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-date {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 14px;
+  color: gray;
+}
+
+.post-content {
+  margin: 20px 0px;
+  text-align: left;
+}
+
+.post-spacer {
+  width: 40%;
+  margin: 40px auto 20px auto;
+  border: 0.5px solid black;
+}
+
+@media (max-width: 1280px) {
+  .blog {
+    width: 80%;
+  }
 }
 
 @media (max-width: 500px) {
   .blog {
-    width: 90%;
+    width: 100%;
   }
+
+  .post-content {
+    font-size: 14px;
+  }
+
 }

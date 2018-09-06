@@ -23,10 +23,11 @@ export class BlogPage extends React.Component {
       posts = this.props.posts.map((post, index) => {
         return (
           <div className="blog-post" key={index}>
-            <div>{post.createdAt}</div>
-            <div>{post.title}</div>
-            <div>{post.content}</div>
-            {this.props.loggedIn ? <button value={post.id} onClick={e => this.onDelete(e.target.value)}>Delete</button> : null}
+            <div className="post-title">{post.title}</div>
+            <div className="post-date">{post.createdAt}</div>
+            <div className="post-content">{post.content}</div>
+            {this.props.loggedIn ? <button className="delete-button" value={post.id} onClick={e => this.onDelete(e.target.value)}>Delete</button> : null}
+            <div className="post-spacer" />
           </div>
         )
       })
@@ -35,9 +36,11 @@ export class BlogPage extends React.Component {
     return (
       <div className="blog">
 
-        <Link to={this.props.loggedIn ? "/blog/new-post" : "/login"}>New Post</Link>
+        <Link to={this.props.loggedIn ? "/blog/new-post" : "/login"} className="new-post-link">New Post</Link>
 
-        {posts}
+        <div className="posts-container">
+          {posts}
+        </div>
 
       </div>
     );
