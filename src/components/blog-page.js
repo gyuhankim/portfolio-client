@@ -25,7 +25,7 @@ export class BlogPage extends React.Component {
           <div className="blog-post" key={index}>
             <div className="post-title">{post.title}</div>
             <div className="post-date">{post.createdAt}</div>
-            <div className="post-content">{post.content}</div>
+            <div className="post-content" dangerouslySetInnerHTML={{__html: post.content}} />
             {this.props.loggedIn ? <button className="delete-button" value={post.id} onClick={e => this.onDelete(e.target.value)}>Delete</button> : null}
             <div className="post-spacer" />
           </div>

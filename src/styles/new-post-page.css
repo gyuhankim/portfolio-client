@@ -7,11 +7,9 @@
   width: 600px;
 }
 
-p {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.react-quill {
-  width: 1000px;
+.quill {
+  width: 600px;
+  height: 300px;
+  margin-bottom: 50px;
+  font-weight: normal;
 }

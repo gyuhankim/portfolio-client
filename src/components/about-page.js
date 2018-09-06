@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+import '../styles/about.css';
+
 export class AboutPage extends React.Component {
 
   randomizeBG(arr) {
@@ -19,7 +21,7 @@ export class AboutPage extends React.Component {
 
     return (
       <div className="about">
-        <p> 
+        <p className="about-placeholder"> 
           Under construction, please check back later!
         </p>
         <img src={this.randomizeBG(bgs)} alt="pixel art gif" />
