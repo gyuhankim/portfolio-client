@@ -55,7 +55,7 @@ export class App extends React.Component {
                 <Route exact path="/blog" component={BlogPage} />
                 <Route exact path="/blog/new-post" component={NewPost} />
                 <Route exact path="/login" component={LoginPage} />
-                <Route path="/blog/edit-post/:blog" component={EditPostPage} />
+                <Route path="/blog/edit-post/:post" component={EditPostPage} />
             </div>
         );
     }

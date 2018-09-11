@@ -33,8 +33,7 @@ export class NewPost extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  loggedIn: state.auth.currentUser !== null,
-  tags: state.tag
+  loggedIn: state.auth.currentUser !== null
 });
 
 export default connect(mapStateToProps)(NewPost);
