@@ -7,9 +7,11 @@ import '../styles/home-page.css';
 export function HomePage() {
 
   return (
-    <div className="home">
+    // <div className="home">
       
-    </div>
+    // </div>
+
+    <Redirect to="/about" />
   );
 }
 

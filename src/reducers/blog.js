@@ -10,12 +10,14 @@ import {
   SUBMIT_BLOG_POST_ERROR,
   DELETE_BLOG_POST_REQUEST,
   DELETE_BLOG_POST_SUCCESS,
-  DELETE_BLOG_POST_ERROR
+  DELETE_BLOG_POST_ERROR,
+  SET_EDITING
 } from '../actions/blog';
 
 const initialState = {
   blog: [],
   currentPost: {},
+  editing: false,
   loading: false,
   error: null
 };

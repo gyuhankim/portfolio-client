@@ -115,7 +115,6 @@ export const deleteBlogPostRequest = () => ({
   type: DELETE_BLOG_POST_REQUEST
 })
 
-
 export const DELETE_BLOG_POST_SUCCESS = 'DELETE_BLOG_POST_SUCCESS';
 export const deleteBlogPostSuccess = () => ({
   type: DELETE_BLOG_POST_SUCCESS
