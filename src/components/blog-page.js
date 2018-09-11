@@ -16,6 +16,10 @@ export class BlogPage extends React.Component {
     this.props.dispatch(getBlog());
   }
 
+  editClicked(id) {
+    console.log(id);
+  }
+
   render() {
     let posts;
     
@@ -24,9 +28,10 @@ export class BlogPage extends React.Component {
         return (
           <div className="blog-post" key={index}>
             <div className="post-title">{post.title}</div>
-            <div className="post-date">{post.createdAt}</div>
+            <div className="post-date">{post.createdAt} <span className="post-updated-date">{post.updatedAt ? post.updatedAt : null}</span></div>
             <div className="post-content" dangerouslySetInnerHTML={{__html: post.content}} />
-            {this.props.loggedIn ? <button className="delete-button" value={post.id} onClick={e => this.onDelete(e.target.value)}>Delete</button> : null}
+            {this.props.loggedIn ? <div><button className="delete-button" value={post.id} onClick={e => this.onDelete(e.target.value)}>Delete</button></div> : null}
+            {this.props.loggedIn ? <Link to={`/blog/edit-post/${post.id}`} className="edit-button">Edit</Link> : null}
             <div className="post-spacer" />
           </div>
         )
