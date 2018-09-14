@@ -29,7 +29,8 @@ export class HeaderBar extends React.Component {
         </div>
 
         <div className="nav-bar">
-          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/resume" className="nav-link">Résumé</Link>
           <Link to="/projects" className="nav-link">Projects</Link>
           <Link to="/blog" className="nav-link">Blog</Link>
         </div>

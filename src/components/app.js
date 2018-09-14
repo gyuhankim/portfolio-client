@@ -9,6 +9,7 @@ import ProjectsPage from './projects-page';
 import BlogPage from './blog-page';
 import NewPost from './create-post-page';
 import LoginPage from './login-page';
+import ResumePage from './resume-page';
 
 import {refreshAuthToken} from '../actions/auth';
 
@@ -48,8 +49,8 @@ export class App extends React.Component {
         return (
             <div className="app">
                 <HeaderBar />
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/about" component={AboutPage} />
+                <Route exact path="/" component={AboutPage} />
+                <Route exact path="/resume" component={ResumePage} />
                 <Route exact path="/projects" component={ProjectsPage} />
                 <Route exact path="/blog" component={BlogPage} />
                 <Route exact path="/blog/new-post" component={NewPost} />
