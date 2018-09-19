@@ -28,11 +28,11 @@ export class AboutPage extends React.Component {
             I'm a full-stack developer based in Atlanta.
           </p>
           <p>
-            When I'm not coding up a website, you'll find me hard at work on projects such as
-            3D modeling, game development and learning new languages and frameworks.
+            When I'm not coding up a website, you'll find me hard at work developing video games on Unity and GameMaker Studio or 3D modeling 
+            on Blender and Maya.
           </p>
           <p>
-            My stack of choice is NodeJS, React and Redux but I'm always eager to learn new technologies!
+            My stack of choice is NodeJS, React and Redux but I'm always hungry to learn new technologies!
           </p>
         </div>
 
