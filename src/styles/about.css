@@ -1,4 +1,133 @@
-.about-placeholder {
-  font-size: 20px;
+.fas, .far {
+  margin: 10px 0px;
+}
+
+.about {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.about-title {
+  width: 100%;
+  font-size: 14px;
+}
+
+.about-me {
+  width: 70%;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.about-photo-container {
+  width: 30%;
+  margin: 20px 0;
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about-contact-title {
   font-weight: bold;
+}
+
+.about-skills {
+  margin-top: 20px;
+  width: 32%;
+  margin: 10px 5px;
+}
+
+.about-skills.red {
+  border: 4px solid rgb(255, 169, 169);
+}
+
+.about-skills.blue {
+  border: 4px solid rgb(159, 217, 255);
+}
+
+.about-skills.green {
+  border: 4px solid rgb(151, 255, 174);
+}
+
+.about-skills-title-red {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgb(255, 169, 169);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about-skills-title-blue {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgb(159, 217, 255);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about-skills-title-green {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgb(151, 255, 174);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fa-window-maximize {
+  margin-top: 20px;
+  color: rgb(255, 169, 169);
+}
+
+.fa-project-diagram {
+  margin-top: 20px;
+  color: rgb(159, 217, 255);
+}
+
+.fa-cube {
+  margin-top: 20px;
+  color: rgb(151, 255, 174);
+}
+
+.fab {
+  margin: 10px;
+}
+
+.contact-list {
+  margin: 20px 0;
+}
+
+@media (max-width: 1280px) {
+  .about {
+    width: 100%;
+  }
+
+  .about-photo-container {
+    width: 40%;
+  }
+
+  .about-skills {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    width: 100%;
+  }
+
+  .about-photo-container {
+    width: 60%;
+  }
+
+  .about-me {
+    font-size: 16px;
+  }
+
+  .about-skills {
+    width: 90%;
+  }
 }

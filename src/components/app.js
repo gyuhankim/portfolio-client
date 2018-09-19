@@ -3,13 +3,13 @@ import {connect} from 'react-redux';
 import {Link, Route, withRouter} from 'react-router-dom';
 
 import HeaderBar from './header-bar';
-import HomePage from './home-page';
 import AboutPage from './about-page';
 import ProjectsPage from './projects-page';
 import BlogPage from './blog-page';
 import NewPost from './create-post-page';
 import LoginPage from './login-page';
 import ResumePage from './resume-page';
+import PixelArt from './pixel-art';
 
 import {refreshAuthToken} from '../actions/auth';
 
@@ -55,6 +55,8 @@ export class App extends React.Component {
                 <Route exact path="/blog" component={BlogPage} />
                 <Route exact path="/blog/new-post" component={NewPost} />
                 <Route exact path="/login" component={LoginPage} />
+                <Route exact path="/pixelart" component={PixelArt} />
+                
             </div>
         );
     }

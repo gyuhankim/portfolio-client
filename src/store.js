@@ -6,12 +6,14 @@ import {setAuthToken, refreshAuthToken} from './actions/auth';
 import {reducer as formReducer} from 'redux-form';
 import blogReducer from './reducers/blog';
 import authReducer from './reducers/auth';
+import projectsReducer from './reducers/projects';
 
 const store = createStore(
     combineReducers({
         form: formReducer,
         auth: authReducer,
-        blog: blogReducer
+        blog: blogReducer,
+        projects: projectsReducer
     }),
     applyMiddleware(thunk)
 );

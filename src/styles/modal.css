@@ -1,0 +1,29 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.project-modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 80%;
+  position: fixed;
+  background: white;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+  overflow: scroll;
+}
+
+@media (max-width: 850px) {
+  .project-modal {
+    width: 90%;
+  }
+}

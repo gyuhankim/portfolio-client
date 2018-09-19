@@ -3,13 +3,14 @@ import {connect} from 'react-redux';
 import requiresLogin from './requires-login';
 import { Document, Page } from 'react-pdf';
 
+import '../styles/resume.css';
 import resume from '../images/resume.pdf';
 
 export default class Dashboard extends React.Component {
 
     render() {
         return (
-          <div>
+          <div className="resume-container">
             <Document file={resume}>
               <Page pageNumber={1} />
             </Document>
