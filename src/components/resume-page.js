@@ -107,8 +107,8 @@ export default class Dashboard extends React.Component {
                   <p><span className="project-stack">Atlanta, GA</span></p><br />
                   <ul>
                     <li>Using Blender, built hard-surface models of transport vehicles for University of Wisconsin.</li>
-                    <li>● Eliminated all mesh inconsistencies and triangulated vertices to allow for realistic physics simulations.</li>
-                    <li>● Produced models within polycount budget while maintaining a high level of detail.</li>
+                    <li>Eliminated all mesh inconsistencies and triangulated vertices to allow for realistic physics simulations.</li>
+                    <li>Produced models within polycount budget while maintaining a high level of detail.</li>
                   </ul>
                 </div>
 
