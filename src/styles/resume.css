@@ -1,0 +1,95 @@
+.resume-container {
+  width: 100%;
+}
+
+.resume-container a {
+  text-decoration: underline;
+}
+
+.resume-download-link {
+  font-size: 18px;
+}
+
+.resume-document {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.resume-contact {
+  width: 49%;
+}
+
+.resume-section {
+  width: 100%;
+  margin: 20px;
+}
+
+.resume-name, .resume-profession, .resume-section-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-section-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.resume-links {
+  width: 49%;
+  text-align: right;
+}
+
+.resume-project {
+  margin-bottom: 40px;
+}
+
+.project-stack {
+  float: right;
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .resume-document {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .resume-document {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .resume-section-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .resume-document {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .resume-section-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .resume-document {
+    width: 100%;
+    font-size: 8px;
+  }
+
+  .resume-section-title {
+    font-size: 14px;
+  }
+}

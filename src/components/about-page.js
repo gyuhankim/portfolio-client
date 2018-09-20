@@ -82,17 +82,17 @@ export class AboutPage extends React.Component {
 
           <div className="contact email">
             <i className="fab fa-google fa-lg"></i>
-            <a href="mailto:gyuhankim@gmail.com">gyuhankim@gmail.com</a>
+            <a href="mailto:gyuhankim@gmail.com" target="_blank" rel="noopener noreferrer">gyuhankim@gmail.com</a>
           </div>
 
           <div className="contact github">
             <i className="fab fa-github-square fa-lg"></i>
-            <a href="https://github.com/gyuhankim">GitHub</a>
+            <a href="https://github.com/gyuhankim" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
 
           <div className="contact linkedin">
             <i className="fab fa-linkedin fa-lg"></i>
-            <a href="https://www.linkedin.com/in/joseph-kim-1b4ba6125/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/joseph-kim-1b4ba6125/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
               
         </div>

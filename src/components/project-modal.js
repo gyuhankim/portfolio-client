@@ -2,6 +2,11 @@ import React from 'react';
 import {hideModal} from '../actions/projects';
 import { connect } from 'react-redux';
 
+import thumbnail1 from '../images/launchpad2.png'
+import thumbnail2 from '../images/ktss.png'
+import thumbnail3 from '../images/s4ss.png'
+import thumbnail6 from '../images/kpss.png'
+
 export class ProjectModal extends React.Component {
 
   checkWhereClicked(component) {
@@ -25,11 +30,17 @@ export class ProjectModal extends React.Component {
                 <h2>{this.props.project}</h2>
               </div>
 
+              <img className="project-screenshot" src={thumbnail1} alt="project-screenshot" />
+
+              <div className="project-links">
+                <a className="project-link" href="https://mysterious-sands-19667.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                <a className="project-link" href="https://github.com/gyuhankim/launchpad-client" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+
               <div className="project-description">
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>A webapp designed to spotlight upcoming video game release dates. Building value for users by providing one singular 
+                  source with a clean and simple interface to view and track the games they're most excited for.</p>
               </div>
 
               <div className="project-technology">
@@ -43,11 +54,6 @@ export class ProjectModal extends React.Component {
 
                 <h3>Tech</h3>
                 <a href="https://www.igdb.com/" target="_blank" rel="noopener noreferrer">IGDB API</a>
-              </div>
-
-              <div className="project-links">
-                <a className="project-link" href="https://mysterious-sands-19667.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                <a className="project-link" href="https://github.com/gyuhankim/launchpad-client" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
 
             </div>
@@ -64,11 +70,17 @@ export class ProjectModal extends React.Component {
                 <h2>{this.props.project}</h2>
               </div>
 
+              <img className="project-screenshot" src={thumbnail6} alt="project-screenshot" />
+              
+              <div className="project-links">
+                <a className="project-link" href="http://karpul-client.surge.sh/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                <a className="project-link" href="https://github.com/thinkful-ei21/client-karpul" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+
               <div className="project-description">
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Karpül is a webapp built to help users find nearby carpools and host new carpools. Utilizing Mapbox’s API and 
+                  toast notifications, nearby pickup points, destinations, carpool schedules and alerts are easily viewable.</p>
               </div>
 
               <div className="project-technology">
@@ -83,11 +95,6 @@ export class ProjectModal extends React.Component {
                 <h3>Tech</h3>
                 <a href="https://www.mapbox.com" target="_blank" rel="noopener noreferrer">Mapbox API</a> <br />
                 <a href="https://cloudinary.com/" target="_blank" rel="noopener noreferrer">Cloudinary CDN</a>
-              </div>
-
-              <div className="project-links">
-                <a className="project-link" href="http://karpul-client.surge.sh/" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                <a className="project-link" href="https://github.com/thinkful-ei21/client-karpul" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
 
             </div>
@@ -133,11 +140,17 @@ export class ProjectModal extends React.Component {
                 <h2>{this.props.project}</h2>
               </div>
 
+              <img className="project-screenshot" src={thumbnail2} alt="project-screenshot" />
+              
+              <div className="project-links">
+                <a className="project-link" href="https://mighty-anchorage-60704.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                <a className="project-link" href="https://github.com/thinkful-ei21/knowtation-client" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+
               <div className="project-description">
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>An interactive, spaced-repetition learning app to teach users about Big O Notation and the operational complexities of various well-known 
+                  sorting and searching algorithms. The database (MongoDB) was built to simulate a linked list data structure.</p>
               </div>
 
               <div className="project-technology">
@@ -148,11 +161,6 @@ export class ProjectModal extends React.Component {
                 <h3>Back-End Stack</h3>
                 <p>NodeJS</p>
                 <p>MongoDB</p>
-              </div>
-
-              <div className="project-links">
-                <a className="project-link" href="https://mighty-anchorage-60704.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                <a className="project-link" href="https://github.com/thinkful-ei21/knowtation-client" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
 
             </div>
@@ -168,22 +176,23 @@ export class ProjectModal extends React.Component {
                 <h2>{this.props.project}</h2>
               </div>
 
+              <img className="project-screenshot" src={thumbnail3} alt="project-screenshot" />
+              
+              <div className="project-links">
+                <a className="project-link" href="https://intense-thicket-25944.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                <a className="project-link" href="https://github.com/gyuhankim/S4-screen-share-screen-saver" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+
               <div className="project-description">
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>A simple webapp to display custom messages on-screen while screen sharing. 
+                  Lightweight, responsive and customizable with various color themes to choose from.</p>
               </div>
 
               <div className="project-technology">
                 <h3>Front-End Stack</h3>
                 <p>React</p>
                 <p>Redux</p>
-              </div>
-
-              <div className="project-links">
-                <a className="project-link" href="https://intense-thicket-25944.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                <a className="project-link" href="https://github.com/gyuhankim/S4-screen-share-screen-saver" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
 
             </div>

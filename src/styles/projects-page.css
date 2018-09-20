@@ -24,6 +24,10 @@
   width: 100%;
 }
 
+.project-screenshot {
+  width: 100%;
+}
+
 @media (max-width: 1280px) {
   .projects {
     justify-content: center;

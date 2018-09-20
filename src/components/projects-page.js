@@ -4,10 +4,10 @@ import ProjectModal from './project-modal';
 import {showModal} from '../actions/projects';
 
 import thumbnail1 from '../images/launchpad.png'
-import thumbnail2 from '../images/ktss.png'
+import thumbnail2 from '../images/ktss2.png'
 import thumbnail3 from '../images/s4ss.png'
 import thumbnail4 from '../images/mainmenu.png'
-import thumbnail6 from '../images/kpss.png'
+import thumbnail6 from '../images/kpss2.png'
 
 import '../styles/projects-page.css';
 import '../styles/modal.css';
