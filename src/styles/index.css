@@ -18,6 +18,14 @@ a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 8px 0px;
+}
+
 button {
   color: black;
   background-color: white;

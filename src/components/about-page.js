@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import photo from '../images/about-photo.jpg'
 import '../styles/about.css';
@@ -17,7 +16,7 @@ export class AboutPage extends React.Component {
         </div>
 
         <div className="about-photo-container">
-          <img className="about-photo" src={photo} />
+          <img className="about-photo" src={photo} alt="Joseph Kim"/>
         </div>
 
         <div className="about-me">

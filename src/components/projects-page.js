@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link, Route } from 'react-router-dom';
 import ProjectModal from './project-modal';
 import {showModal} from '../actions/projects';
 
@@ -8,7 +7,6 @@ import thumbnail1 from '../images/launchpad.png'
 import thumbnail2 from '../images/ktss.png'
 import thumbnail3 from '../images/s4ss.png'
 import thumbnail4 from '../images/mainmenu.png'
-import thumbnail5 from '../images/ptss.png'
 import thumbnail6 from '../images/kpss.png'
 
 import '../styles/projects-page.css';
@@ -24,33 +22,28 @@ export class ProjectsPage extends React.Component {
 
           {this.props.modalHidden ? null : <ProjectModal />}
 
-          <div className="project" value="cubes" onClick={() => this.props.dispatch(showModal('cubes'))}>
-              <img src={thumbnail4} className="project-thumbnail" />
-              Cubes
+          <div className="project" value="cubes" onClick={() => this.props.dispatch(showModal('CubesRedux'))}>
+              <img src={thumbnail4} className="project-thumbnail" alt="project thumbnail" />
+              CubesRedux
           </div>
 
           <div className="project" onClick={() => this.props.dispatch(showModal('s4'))}>
-              <img src={thumbnail3} className="project-thumbnail" />
+              <img src={thumbnail3} className="project-thumbnail" alt="project thumbnail" />
               s4
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal('testing'))}>
-              <img src={thumbnail5} className="project-thumbnail" />
-              Testing
-          </div>
-
-          <div className="project" onClick={() => this.props.dispatch(showModal('knowtation'))}>
-              <img src={thumbnail2} className="project-thumbnail" />
+          <div className="project" onClick={() => this.props.dispatch(showModal('KNOW(tation)'))}>
+              <img src={thumbnail2} className="project-thumbnail" alt="project thumbnail" />
               KNOW(tation)
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal('launchpad'))}>
-              <img src={thumbnail1} className="project-thumbnail" />
+          <div className="project" onClick={() => this.props.dispatch(showModal('LaunchPad.gg'))}>
+              <img src={thumbnail1} className="project-thumbnail" alt="project thumbnail" />
               LaunchPad.gg
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal('karpul'))}>
-              <img src={thumbnail6} className="project-thumbnail" />
+          <div className="project" onClick={() => this.props.dispatch(showModal('Karpül'))}>
+              <img src={thumbnail6} className="project-thumbnail" alt="project thumbnail" />
               Karpül
           </div>
 
