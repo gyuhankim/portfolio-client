@@ -51,12 +51,11 @@ export class App extends React.Component {
                 <HeaderBar />
                 <Route exact path="/" component={AboutPage} />
                 <Route exact path="/resume" component={ResumePage} />
-                <Route exact path="/projects" component={ProjectsPage} />
                 <Route exact path="/blog" component={BlogPage} />
                 <Route exact path="/blog/new-post" component={NewPost} />
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/pixelart" component={PixelArt} />
-                
+                <Route exact path="/projects" component={ProjectsPage} />
             </div>
         );
     }

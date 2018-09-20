@@ -4,7 +4,7 @@ import {
 } from '../actions/projects';
 
 const initialState = {
-  project: {},
+  project: '',
   modalHidden: true
 }
 
@@ -14,7 +14,8 @@ export default function projectReducer(state = initialState, action) {
     case SHOW_MODAL:
     return {
       ...state,
-      modalHidden: false
+      modalHidden: false,
+      project: action.project
     }
 
     case HIDE_MODAL:

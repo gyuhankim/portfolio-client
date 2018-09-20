@@ -10,7 +10,7 @@ export class ProjectModal extends React.Component {
       return (
         <div className="modal-container" onClick={() => this.props.dispatch(hideModal())}>
           <div className="project-modal">
-            Testing
+            {this.props.project}
           </div>
         </div>
       )
@@ -21,7 +21,8 @@ export class ProjectModal extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  modalHidden: state.projects.modalHidden
+  modalHidden: state.projects.modalHidden,
+  project: state.projects.project
 })
 
 export default connect(mapStateToProps)(ProjectModal);

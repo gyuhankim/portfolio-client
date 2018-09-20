@@ -24,32 +24,32 @@ export class ProjectsPage extends React.Component {
 
           {this.props.modalHidden ? null : <ProjectModal />}
 
-          <div className="project" value="cubes" onClick={() => this.props.dispatch(showModal())}>
+          <div className="project" value="cubes" onClick={() => this.props.dispatch(showModal('cubes'))}>
               <img src={thumbnail4} className="project-thumbnail" />
               Cubes
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal())}>
+          <div className="project" onClick={() => this.props.dispatch(showModal('s4'))}>
               <img src={thumbnail3} className="project-thumbnail" />
               s4
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal())}>
+          <div className="project" onClick={() => this.props.dispatch(showModal('testing'))}>
               <img src={thumbnail5} className="project-thumbnail" />
               Testing
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal())}>
+          <div className="project" onClick={() => this.props.dispatch(showModal('knowtation'))}>
               <img src={thumbnail2} className="project-thumbnail" />
               KNOW(tation)
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal())}>
+          <div className="project" onClick={() => this.props.dispatch(showModal('launchpad'))}>
               <img src={thumbnail1} className="project-thumbnail" />
               LaunchPad.gg
           </div>
 
-          <div className="project" onClick={() => this.props.dispatch(showModal())}>
+          <div className="project" onClick={() => this.props.dispatch(showModal('karpul'))}>
               <img src={thumbnail6} className="project-thumbnail" />
               Karpül
           </div>
