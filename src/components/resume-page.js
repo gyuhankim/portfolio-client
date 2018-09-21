@@ -38,8 +38,8 @@ export default class Dashboard extends React.Component {
 
               <div className="resume-section">
                 <div className="resume-section-title">Skills</div>
-                <p><span className="bold">Advanced: </span>JavaScript, React, Redux, Node.js, jQuery, REST APIs, HTML5, CSS3, Git, GitHub.</p>
-                <p><span className="bold">Proficient: </span>ES6, MongoDB, PostgreSQL, TDD with Mocha, Chai, Enzyme and Jest, Python and Flask, NPM, webpack and Browserify.</p>
+                <p><span className="bold">Advanced: </span>JavaScript, React, Redux, Node.js, MongoDB,  jQuery, ES6, REST APIs, HTML5, CSS3, Git, GitHub.</p>
+                <p><span className="bold">Proficient: </span>PostgreSQL, Python, Flask, C#, Unity3D, TDD with Mocha, Chai, Enzyme and Jest, NPM, webpack and Browserify.</p>
                 <p><span className="bold">Expert: </span>Written & verbal communication, project management, wireframing and storyboarding.</p>
               </div>
 
