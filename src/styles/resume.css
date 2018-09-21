@@ -16,6 +16,7 @@
   margin: 20px auto;
   width: 50%;
   text-align: left;
+  padding: 10px;
 }
 
 .resume-contact {
@@ -24,7 +25,7 @@
 
 .resume-section {
   width: 100%;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .resume-name, .resume-profession, .resume-section-title {
@@ -43,7 +44,7 @@
 }
 
 .resume-project {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .project-stack {
@@ -72,10 +73,14 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
   .resume-document {
     width: 100%;
     font-size: 12px;
+  }
+
+  .resume-name, .resume-profession {
+    font-size: 16px;
   }
 
   .resume-section-title {
@@ -86,10 +91,22 @@
 @media (max-width: 500px) {
   .resume-document {
     width: 100%;
-    font-size: 8px;
+    font-size: 9px;
+  }
+
+  .resume-name, .resume-profession {
+    font-size: 12px;
   }
 
   .resume-section-title {
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .resume-contact {
+    width: 33%;
+  }
+
+  .resume-links {
+    width: 66%;
   }
 }
