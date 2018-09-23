@@ -42,6 +42,14 @@
   border: 0.5px solid black;
 }
 
+.blog-loading-1 {
+  font-weight: bold;
+}
+
+.blog-loading-2 {
+  font-style: italic;
+}
+
 @media (max-width: 1280px) {
   .blog {
     width: 80%;

@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getBlog, deleteBlogPost } from '../actions/blog';
+import PixelArt from './pixel-art';
 
 import '../styles/blog.css';
 
@@ -38,6 +39,14 @@ export class BlogPage extends React.Component {
 
         <Link to={this.props.loggedIn ? "/blog/new-post" : "/login"} className="new-post-link">New Post</Link>
 
+        {this.props.loading ? 
+        <div>
+          <p className="blog-loading-1">The blog server is starting up...</p>
+          <p className="blog-loading-2">This may take up to 30 seconds...</p>
+          <PixelArt />
+        </div>
+        : null} 
+
         <div className="posts-container">
           {posts}
         </div>
@@ -50,7 +59,8 @@ export class BlogPage extends React.Component {
 
 const mapStateToProps = state => ({
     loggedIn: state.auth.currentUser !== null,
-    posts: state.blog.blog
+    posts: state.blog.blog,
+    loading: state.blog.loading
 });
 
 export default connect(mapStateToProps)(BlogPage);
