@@ -19,6 +19,7 @@ export class BlogPage extends React.Component {
 
   render() {
     let posts;
+    let loadingScreen;
     
     if (this.props.posts) {
       posts = this.props.posts.map((post, index) => {
@@ -34,18 +35,21 @@ export class BlogPage extends React.Component {
       })
     }
 
-    return (
-      <div className="blog">
-
-        <Link to={this.props.loggedIn ? "/blog/new-post" : "/login"} className="new-post-link">New Post</Link>
-
-        {this.props.loading ? 
+    if (this.props.posts.length == 0) {
+      loadingScreen = 
         <div>
           <p className="blog-loading-1">The blog server is starting up...</p>
           <p className="blog-loading-2">This may take up to 30 seconds...</p>
           <PixelArt />
         </div>
-        : null} 
+    }
+
+    return (
+      <div className="blog">
+
+        <Link to={this.props.loggedIn ? "/blog/new-post" : "/login"} className="new-post-link">New Post</Link>      
+        
+        {loadingScreen}
 
         <div className="posts-container">
           {posts}
