@@ -83,6 +83,14 @@ export default class Dashboard extends React.Component {
                       responsive and customizable with variouscolor themes to choose from.</p>
                   </div>
 
+                  <div className="resume-project">
+                    <span className="bold">Game Developer - </span>
+                    <a href="https://www.youtube.com/watch?v=PW1Rd4iuDz8" target="_blank" rel="noopener noreferrer">
+                    CubesRedux</a>
+                    <span className="bold project-stack">C#, Unity3D</span>
+                    <p>A hybrid rhythm / endless runner game where you control a cube to dodge incoming obstacles to the beat of the music.</p>
+                  </div>
+
               </div>
 
               <div className="resume-section">
