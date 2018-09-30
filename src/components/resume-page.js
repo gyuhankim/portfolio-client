@@ -24,7 +24,7 @@ export default class Dashboard extends React.Component {
               <div className="resume-links">
                 <p className="resume-profession">FULL STACK WEB DEVELOPER</p>
                 <p><a href="https://github.com/gyuhankim" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                <p><a href="https://www.linkedin.com/in/joseph-kim-1b4ba6125/">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/joseph-kim-1b4ba6125/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                 <p><a href="http://www.josephkim.me/">josephkim.me</a></p>
               </div>
 
