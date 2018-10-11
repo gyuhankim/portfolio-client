@@ -55,6 +55,10 @@ iframe {
   border: 0;
 }
 
+.project-links {
+  margin: 10px 0;
+}
+
 .project-link {
   margin: 0 10px;
   text-decoration: underline;

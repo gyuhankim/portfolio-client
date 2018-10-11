@@ -113,12 +113,20 @@ export class ProjectModal extends React.Component {
               <div className="youtube-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/PW1Rd4iuDz8" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen title="?"></iframe>
               </div>
+              
+              <div className="project-links">
+                <a className="project-link" href="https://gyuhankim.github.io/cubes-webgl/" target="_blank" rel="noopener noreferrer">Play</a>
+              </div>
 
               <div className="project-description">
                 <h3>Description</h3>
                 <p>Command a neon cube to avoid hitting other neon cubes. 
                 If you hit another neon cube, you will explode into many neon cubes.
                 Don't be many neon cubes... just be one neon cube.</p>
+                <p>Navigate Menu: ↑(Up) and ↓(Down)</p>
+                <p>Player Movement: ←(Left) and →(Right)</p>
+                <p>Restart Level: [Space]</p>
+                <p>Exit Game: [Escape]</p>
               </div>
 
               <div className="project-technology">
