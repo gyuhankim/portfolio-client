@@ -10,6 +10,7 @@ import NewPost from './create-post-page';
 import LoginPage from './login-page';
 import ResumePage from './resume-page';
 import PixelArt from './pixel-art';
+import Cubes from './cubes';
 
 import {refreshAuthToken} from '../actions/auth';
 
@@ -56,6 +57,7 @@ export class App extends React.Component {
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/pixelart" component={PixelArt} />
                 <Route exact path="/projects" component={ProjectsPage} />
+                <Route exact path="/projects/cubesredux" component={Cubes} />
             </div>
         );
     }
