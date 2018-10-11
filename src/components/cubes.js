@@ -2,22 +2,26 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import '../styles/cubes.css';
+import Unity, { UnityContent } from 'react-unity-webgl';
 
-import cubesHTML from '../index.html';
+import '../styles/cubes.css';
 
 export class Cubes extends React.Component {
   constructor(props) {
     super(props);
 
+    this.unityContent = new UnityContent(
+      // "../src/Build/WebGL_Build.json",
+      // "../src/Build/UnityLoader.js"
+      "./../src/Build/WebGL_Build.json",
+      "./../src/Build/UnityLoader.js"
+    );
   }
 
   render() {
 
     return (
-      <div>
-        <cubesHTML />
-      </div>
+      <Unity unityContent={this.unityContent} width="1280px" height="720px" />
     );
   }
     
