@@ -80,7 +80,7 @@ export default class Dashboard extends React.Component {
                     S4</a>
                     <span className="bold project-stack">React, Redux</span>
                     <p>A simple webapp to display custom messages on-screen while screen sharing. Lightweight, 
-                      responsive and customizable with variouscolor themes to choose from.</p>
+                      responsive and customizable with various color themes to choose from.</p>
                   </div>
 
                   <div className="resume-project">
