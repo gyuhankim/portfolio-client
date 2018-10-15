@@ -1,59 +1,25 @@
-# Joseph Kim Portfolio Server
+# Joseph Kim Portfolio Client
 
 ## Table of Contents
 - [Introduction](#introduction)
 - [Tech Stack](#tech-stack)
-- [Blog Model](#blog-model)
-  - [Post Schema](#-post-schema)
-- [Posts Endpoint](#posts-endpoint)
+- [Components](#components)
 
 ## Introduction
-This is the server documentation for [My Portfolio](https://josephkim.me).
+This is the client documentation for [My Portfolio](https://josephkim.me).
 
 ## Tech Stack
-* Node
-* Express
-* MongoDB
-* Mongoose
-* Morgan
-* Passport
-* BCryptJS
-* JSONWebToken
-* Moment
-* dotEnv
+* React
+* Redux
+* QuillJS
 
-## Blog Model
-The blog uses MongoDB / Mongoose to store and timestamp blog posts.
-
-### Post Schema
-```
-title: {
-    type: String,
-    required: true
-  },
-  content: {
-    type: String,
-    required: true
-  },
-  createdAt: {
-    type: String,
-    required: true
-  },
-  updatedAt: {
-    type: String
-  },
-  dbTime: {
-    type: Number,
-    required: true
-  }
-```
-
-## Posts Endpoint
-All requests and responses are in JSON format.
-
-Action | Path |
+## Components
+Component | Purpose |
 --- | --- |
-GET | https://joes-portfolio-backend.herokuapp.com/api/blog |
-POST | https://joes-portfolio-backend.herokuapp.com/api/blog |
-PUT | https://joes-portfolio-backend.herokuapp.com/api/blog/:id |
-DELETE | https://joes-portfolio-backend.herokuapp.com/api/blog/:id |
+App | Base component containing all routes |
+About | Landing page |
+Header-Bar | Header bar that persists in all views, serves as the main nav |
+Resume | Single page that displays an HTMLified version of my resume with a download link for the PDF |
+Projects | Flexbox styled component that displays a grid of projects |
+Blog | Displays blog posts sorted by date |
+Blog-Form | Receives user input in form and relays as JSON to the backend / Authorization required |
