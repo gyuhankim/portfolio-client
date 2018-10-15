@@ -35,6 +35,20 @@ export class AboutPage extends React.Component {
           </p>
         </div>
 
+        <div className="about-awards">
+          <a className="about-award-link" href="https://hypepotamus.com/people/joseph-kim/" target="_blank" rel="noopener noreferrer">
+            <div className="about-award">
+              <img className="hypepotamus-logo" src="https://1ycbx02rgnsa1i87hd1i7v1r-wpengine.netdna-ssl.com/wp-content/uploads/2014/06/hypepotamus-masthead.svg"></img>
+              <p className="about-award-title">
+                Featured Tech Talent
+              </p>
+              <blockquote className="about-award-statement">
+                "Joseph Kim was lured into technology by a constant flow of new ideas for apps and solutions..."
+              </blockquote>
+            </div>  
+          </a>
+        </div>
+
         <div className="about-skills red">
           <i className="far fa-window-maximize fa-4x"></i>
           <div className="about-skills-title-red">
