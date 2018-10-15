@@ -85,8 +85,9 @@ export default class Dashboard extends React.Component {
 
                   <div className="resume-project">
                     <span className="bold">Game Developer - </span>
-                    <a href="https://www.youtube.com/watch?v=PW1Rd4iuDz8" target="_blank" rel="noopener noreferrer">
-                    CubesRedux</a>
+                    <a href="https://gyuhankim.github.io/cubes-webgl/" target="_blank" rel="noopener noreferrer">
+                    CubesRedux</a> - <a href="https://www.youtube.com/watch?v=PW1Rd4iuDz8" target="_blank" rel="noopener noreferrer">
+                    YouTube</a>
                     <span className="bold project-stack">C#, Unity3D</span>
                     <p>A hybrid rhythm / endless runner game where you control a cube to dodge incoming obstacles to the beat of the music.</p>
                   </div>
