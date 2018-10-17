@@ -8,8 +8,8 @@ export class CubesRedux extends React.Component {
     super(props);
 
     this.unityContent = new UnityContent(
-      '../../public/WebGL_Build/Build/WebGL_Build.json',
-      '../../public/WebGL_Build/Build/UnityLoader.js'
+      '../../public/WebGL_Build/Build/CubesRedux_WebGL.json',
+      '../../public/CubesRedux_WebGL/Build/UnityLoader.js'
     )
   }
 
