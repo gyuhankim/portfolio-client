@@ -11,9 +11,6 @@ import LoginPage from './login-page';
 import ResumePage from './resume-page';
 import PixelArt from './pixel-art';
 
-// Games
-import CubesRedux from './cubes-redux';
-
 import {refreshAuthToken} from '../actions/auth';
 
 import '../styles/app.css';
@@ -59,7 +56,6 @@ export class App extends React.Component {
                 <Route exact path="/login" component={LoginPage} />
                 <Route exact path="/pixelart" component={PixelArt} />
                 <Route exact path="/projects" component={ProjectsPage} />
-                <Route exact path="/projects/cubes-redux" component={CubesRedux} />
             </div>
         );
     }
